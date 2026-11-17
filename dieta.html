@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Minha dieta</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%2317937D%22/%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%230A4A42%22/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width%3D%22512%22%20height%3D%22512%22%20rx%3D%22112%22%20fill%3D%22url%28%23g%29%22/%3E%3Cg%20transform%3D%22translate%28-48%2034%29%22%3E%0A%3Cpath%20fill%3D%22%23F3FBF7%22%20fill-rule%3D%22evenodd%22%20stroke%3D%22%23F3FBF7%22%20stroke-width%3D%2216%22%20stroke-linejoin%3D%22round%22%20d%3D%22M176%20140H276C376%20140%20432%20196%20432%20256C432%20316%20376%20372%20276%20372H176ZM232%20188V324H268C326%20324%20376%20296%20376%20256C376%20216%20326%20188%20268%20188Z%22/%3E%0A%3Cpath%20fill%3D%22%23B6E36F%22%20d%3D%22M196%20118C192%2076%20228%2050%20276%2056C280%20100%20248%20134%20196%20118Z%22/%3E%0A%3Cpath%20d%3D%22M204%20112C222%2096%20244%2080%20262%2068%22%20fill%3D%22none%22%20stroke%3D%22%230E6F63%22%20stroke-opacity%3D%22.55%22%20stroke-width%3D%225%22%20stroke-linecap%3D%22round%22/%3E%0A%3C/g%3E%3C/svg%3E%0A">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<meta name="theme-color" content="#0E6F63">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#EEF3F0;--surface:#fff;--ink:#12201A;--muted:#5C6B64;--line:#D6E0DA;--accent:#0E6F63;--accent-ink:#fff;--p:#2F5DE0;--c:#B77B0A;--f:#C2465F;--over:#C0392B;--track:#DCE6E0;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0E1713;--surface:#16231D;--ink:#E8F0EB;--muted:#8FA298;--line:#2A3B33;--accent:#4FC3AF;--accent-ink:#06201B;--p:#7B9BFF;--c:#E6B04A;--f:#F07A92;--over:#FF7A6B;--track:#24352D;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0E1713;--surface:#16231D;--ink:#E8F0EB;--muted:#8FA298;--line:#2A3B33;--accent:#4FC3AF;--accent-ink:#06201B;--p:#7B9BFF;--c:#E6B04A;--f:#F07A92;--over:#FF7A6B;--track:#24352D;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.45 "Schibsted Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:520px;margin:0 auto;padding:16px 16px 48px}
+.nav{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
+.nav b{font-size:17px;font-weight:700}
+button{font:inherit;color:inherit;cursor:pointer}
+.ic{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:var(--surface);font-size:20px}
+.ic:focus-visible,.btn:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.hero{padding:12px 0 18px}
+.hero .lbl{color:var(--muted);font-size:14px}
+.hero .big{font-size:76px;line-height:1;font-weight:800;letter-spacing:-.03em;margin:2px 0 4px}
+.hero .big.over{color:var(--over)}
+.hero .sub{color:var(--muted);font-size:14px}
+.bar{height:10px;border-radius:99px;background:var(--track);overflow:hidden}
+.bar i{display:block;height:100%;border-radius:99px;background:var(--accent);transition:width .35s}
+.bar i.over{background:var(--over)}
+.mac{display:grid;gap:12px;margin:18px 0 22px}
+.mac .row{display:grid;grid-template-columns:96px 1fr auto;align-items:center;gap:10px;font-size:14px}
+.mac .row span:last-child{color:var(--muted);font-variant-numeric:tabular-nums}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:16px;margin-bottom:16px}
+h2{font-size:16px;margin:0 0 12px;font-weight:700}
+label{display:block;font-size:13px;color:var(--muted);margin-bottom:4px}
+input,select{width:100%;height:46px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink);font:inherit;padding:0 12px}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px}
+.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:10px}
+.btn{height:48px;width:100%;border:0;border-radius:12px;background:var(--accent);color:var(--accent-ink);font-weight:700}
+.btn.sec{background:transparent;color:var(--ink);border:1px solid var(--line);margin-top:8px}
+.prev{font-size:13px;color:var(--muted);margin:-2px 0 10px}
+.meal{margin-bottom:14px}
+.meal h3{display:flex;justify-content:space-between;font-size:14px;margin:0 0 4px;font-weight:700}
+.meal h3 span{color:var(--muted);font-weight:400}
+.it{display:flex;align-items:center;gap:8px;padding:8px 0;border-top:1px solid var(--line)}
+.it div{flex:1;min-width:0}
+.it b{display:block;font-weight:500;overflow-wrap:anywhere}
+.it small{color:var(--muted)}
+.it button{border:0;background:none;color:var(--muted);font-size:22px;width:44px;height:44px}
+.empty{color:var(--muted);font-size:14px;margin:0}
+details summary{font-weight:700;cursor:pointer;min-height:32px}
+details .g2{margin-top:12px}
+.hide{display:none}
+</style>
+</head>
+<body>
+<main>
+  <div class="nav">
+    <button class="ic" id="prev" aria-label="Dia anterior">‹</button>
+    <b id="dlabel"></b>
+    <button class="ic" id="next" aria-label="Próximo dia">›</button>
+  </div>
+
+  <section class="hero">
+    <div class="lbl" id="hlbl">Restam</div>
+    <div class="big" id="rem">0</div>
+    <div class="sub" id="sub"></div>
+    <div class="bar" style="margin-top:12px"><i id="kbar"></i></div>
+  </section>
+
+  <section class="mac" id="mac"></section>
+
+  <section class="card">
+    <h2>Registrar refeição</h2>
+    <label for="meal">Refeição</label>
+    <select id="meal" style="margin-bottom:12px"></select>
+    <label for="plan">Refeição pronta do plano</label>
+    <div class="g2" style="grid-template-columns:1fr auto;margin-bottom:6px">
+      <select id="plan"></select>
+      <button class="btn" id="addplan" style="width:auto;padding:0 16px;height:46px">Registrar</button>
+    </div>
+    <p class="prev">Registra todos os itens de uma vez, com as quantidades do plano.</p>
+    <h2 style="margin-top:18px">Ou um alimento avulso</h2>
+    <label for="food">Alimento</label>
+    <select id="food" style="margin-bottom:10px"></select>
+    <div id="byg">
+      <label for="grams">Quantidade (g)</label>
+      <input id="grams" type="number" inputmode="decimal" min="0" placeholder="150">
+      <p class="prev" id="pv"></p>
+    </div>
+    <div id="manual" class="hide">
+      <label for="mname">Nome</label>
+      <input id="mname" type="text" placeholder="Ex.: marmita da academia" style="margin-bottom:10px">
+      <div class="g4">
+        <div><label for="mk">kcal</label><input id="mk" type="number" inputmode="decimal" min="0"></div>
+        <div><label for="mp">Prot.</label><input id="mp" type="number" inputmode="decimal" min="0"></div>
+        <div><label for="mc">Carb.</label><input id="mc" type="number" inputmode="decimal" min="0"></div>
+        <div><label for="mf">Gord.</label><input id="mf" type="number" inputmode="decimal" min="0"></div>
+      </div>
+    </div>
+    <button class="btn" id="add">Adicionar</button>
+    <button class="btn sec" id="copy">Copiar refeições do dia anterior</button>
+  </section>
+
+  <section class="card" id="list"></section>
+
+  <section class="card">
+    <details>
+      <summary>Metas diárias</summary>
+      <div class="g2">
+        <div><label for="gk">Calorias (kcal)</label><input id="gk" type="number" inputmode="numeric"></div>
+        <div><label for="gp">Proteína (g)</label><input id="gp" type="number" inputmode="numeric"></div>
+        <div><label for="gc">Carboidrato (g)</label><input id="gc" type="number" inputmode="numeric"></div>
+        <div><label for="gf">Gordura (g)</label><input id="gf" type="number" inputmode="numeric"></div>
+      </div>
+    </details>
+  </section>
+  <p class="prev" style="text-align:center">Valores dos alimentos são aproximados (por 100 g, já preparados). Os dados ficam salvos neste aparelho.</p>
+</main>
+
+<script>
+var KEY='dieta-v1';
+var FOODS=[
+['Pão francês',300,9,58,3,50,'1 unidade = 50 g'],
+['Queijo coalho grelhado',340,22,3,26,25,'1 fatia fina = 25 g'],
+['Peito de frango (desfiado ou grelhado)',163,31.5,0,3,150,'peso já pronto'],
+['Patinho moído',220,34,0,9,150,'peso já pronto'],
+['Leite desnatado',35,3.4,5,0.1,200,'1 copo = 200 ml'],
+['Macarrão cozido',150,5,31,0.9,110,'peso já cozido'],
+['Molho de tomate',42,1.5,7.5,0.8,60,'3 a 4 colheres de sopa'],
+['Bombom Ouro Branco',525,6,56,31,20,'1 unidade = 20 g'],
+['Banana',90,1.1,22.5,0.3,100,'1 unidade média'],
+['Uva',67,0.7,17,0.2,150,'20 a 25 uvas'],
+['Natural Whey Verde Campo (morango)',51,6,4.4,1,250,'1 pote = 250 g'],
+['Doce de leite',300,5.5,55,7,50,'2 a 3 colheres de sopa rasas'],
+['Café com adoçante, sem açúcar',0,0,0,0,200,'à vontade'],
+['Ovo cozido',146,13,0.6,9.5,50,'1 unidade = 50 g'],
+['Whey protein (pó)',400,80,8,6,30,'1 scoop = 30 g'],
+['Iogurte grego natural',97,9,4,5,170,''],
+['Arroz branco cozido',128,2.5,28,0.2,150,''],
+['Feijão cozido',77,4.5,14,0.5,100,''],
+['Batata-doce cozida',77,0.6,18,0.1,150,''],
+['Aveia em flocos',394,14,67,8.5,30,''],
+['Pão integral',253,9,49,3.5,50,''],
+['Maçã',52,0.3,14,0.2,150,''],
+['Brócolis cozido',35,2.4,7,0.4,100,''],
+['Tilápia grelhada',128,26,0,2.7,150,''],
+['Azeite',884,0,0,100,10,'1 colher de sopa ≈ 10 g']];
+var PLAN_N=13;
+var PLANOS=[
+['Café ou lanche com queijo coalho',[[0,50],[1,25],[4,200]]],
+['Café ou lanche com frango desfiado',[[0,50],[2,50],[4,200]]],
+['Almoço ou jantar com frango',[[2,150],[5,110],[6,60]]],
+['Almoço ou jantar com patinho',[[3,150],[5,55],[6,60]]],
+['Lanche com banana e Natural Whey',[[8,100],[10,250]]],
+['Lanche com uva e Natural Whey',[[9,150],[10,250]]],
+['Sobremesa: Ouro Branco',[[7,20]]],
+['Pré-treino: doce de leite',[[11,50]]]];
+var MEALS=['Café da manhã','Almoço','Sobremesa 1','Lanche da tarde','Jantar','Sobremesa 2','Pré-treino'];
+var S=load(),cur=dkey(new Date());
+function load(){var s=null;try{var r=localStorage.getItem(KEY);if(r)s=JSON.parse(r)}catch(e){}
+  if(!s)s={goals:{k:1700,p:140,c:170,f:30},days:{}};
+  var g=s.goals;if(g.k===1700&&g.p===155&&g.c===165&&g.f===55)s.goals={k:1700,p:140,c:170,f:30};
+  var map={'Lanche':'Lanche da tarde','Treino':'Pré-treino'};
+  for(var d in s.days)s.days[d].forEach(function(x){if(map[x.meal])x.meal=map[x.meal]});
+  return s}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}}
+function dkey(d){return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0')}
+function shift(k,n){var d=new Date(k+'T12:00:00');d.setDate(d.getDate()+n);return dkey(d)}
+function $(id){return document.getElementById(id)}
+function esc(s){return String(s).replace(/[&<>"']/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
+function r1(n){return Math.round(n*10)/10}
+function items(k){return S.days[k]||(S.days[k]=[])}
+function num(id){var v=parseFloat($(id).value.replace(',','.'));return isNaN(v)||v<0?0:v}
+
+function render(){
+  var g=S.goals,it=items(cur),t={k:0,p:0,c:0,f:0};
+  it.forEach(function(x){t.k+=x.k;t.p+=x.p;t.c+=x.c;t.f+=x.f});
+  var today=dkey(new Date());
+  $('dlabel').textContent=cur===today?'Hoje':new Date(cur+'T12:00:00').toLocaleDateString('pt-BR',{weekday:'short',day:'numeric',month:'short'});
+  var rem=Math.round(g.k-t.k),over=rem<0;
+  $('hlbl').textContent=over?'Passou da meta em':'Restam';
+  $('rem').textContent=Math.abs(rem);$('rem').className='big'+(over?' over':'');
+  $('sub').textContent='kcal · '+Math.round(t.k)+' de '+g.k+' consumidas';
+  var kb=$('kbar');kb.style.width=Math.min(100,g.k?t.k/g.k*100:0)+'%';kb.className=over?'over':'';
+  var rows=[['Proteína','p','var(--p)'],['Carboidrato','c','var(--c)'],['Gordura','f','var(--f)']];
+  $('mac').innerHTML=rows.map(function(r){
+    var v=t[r[1]],goal=g[r[1]],pct=goal?Math.min(100,v/goal*100):0;
+    return '<div class="row"><span>'+r[0]+'</span><div class="bar"><i style="width:'+pct+'%;background:'+r[2]+'"></i></div><span>'+Math.round(v)+' / '+goal+' g</span></div>'}).join('');
+  var h='<h2>Refeições do dia</h2>';
+  if(!it.length)h+='<p class="empty">Nada registrado ainda. Escolha um alimento acima e informe a quantidade.</p>';
+  MEALS.forEach(function(m){
+    var li=it.filter(function(x){return x.meal===m});if(!li.length)return;
+    var mk=li.reduce(function(a,x){return a+x.k},0);
+    h+='<div class="meal"><h3>'+m+'<span>'+Math.round(mk)+' kcal</span></h3>'+li.map(function(x){
+      return '<div class="it"><div><b>'+esc(x.name)+(x.g?' · '+x.g+' g':'')+'</b><small>'+Math.round(x.k)+' kcal · P '+r1(x.p)+' · C '+r1(x.c)+' · G '+r1(x.f)+'</small></div><button data-id="'+x.id+'" aria-label="Remover '+esc(x.name)+'">×</button></div>'}).join('')+'</div>'});
+  $('list').innerHTML=h;
+}
+
+function fillFoods(){
+  var o=function(a,b){return FOODS.slice(a,b).map(function(f,i){return '<option value="'+(a+i)+'">'+f[0]+'</option>'}).join('')};
+  $('food').innerHTML='<optgroup label="Do seu plano">'+o(0,PLAN_N)+'</optgroup><optgroup label="Outros">'+o(PLAN_N,FOODS.length)+'</optgroup><option value="m">Outro (digitar valores)</option>';
+  $('meal').innerHTML=MEALS.map(function(m){return '<option>'+m+'</option>'}).join('');
+  $('plan').innerHTML=PLANOS.map(function(p,i){return '<option value="'+i+'">'+p[0]+'</option>'}).join('');
+  $('grams').value=FOODS[0][5];
+}
+function addPlan(){
+  var p=PLANOS[+$('plan').value],meal=$('meal').value;
+  p[1].forEach(function(e){var f=FOODS[e[0]],q=e[1]/100;
+    items(cur).push({id:Date.now()+Math.random().toString(36).slice(2,6),meal:meal,name:f[0],g:e[1],k:f[1]*q,p:f[2]*q,c:f[3]*q,f:f[4]*q})});
+  save();render();
+}
+function preview(){
+  var v=$('food').value,man=v==='m';
+  $('manual').className=man?'':'hide';$('byg').className=man?'hide':'';
+  if(man)return;
+  var f=FOODS[+v],g=num('grams');
+  $('pv').textContent=(g?Math.round(f[1]*g/100)+' kcal · P '+r1(f[2]*g/100)+' · C '+r1(f[3]*g/100)+' · G '+r1(f[4]*g/100):'Por 100 g: '+f[1]+' kcal · P '+f[2]+' · C '+f[3]+' · G '+f[4])+(f[6]?' · '+f[6]:'');
+}
+function addItem(){
+  var v=$('food').value,meal=$('meal').value,o;
+  if(v==='m'){
+    var nm=$('mname').value.trim();if(!nm||!num('mk')){$('mname').focus();return}
+    o={name:nm,g:0,k:num('mk'),p:num('mp'),c:num('mc'),f:num('mf')};
+    ['mname','mk','mp','mc','mf'].forEach(function(i){$(i).value=''});
+  }else{
+    var g=num('grams');if(!g){$('grams').focus();return}
+    var f=FOODS[+v],q=g/100;
+    o={name:f[0],g:g,k:f[1]*q,p:f[2]*q,c:f[3]*q,f:f[4]*q};
+    $('grams').value=FOODS[+v][5]||'';
+  }
+  o.id=Date.now()+Math.random().toString(36).slice(2,6);o.meal=meal;
+  items(cur).push(o);save();preview();render();
+}
+
+$('add').onclick=addItem;
+$('food').onchange=function(){var v=$('food').value;if(v!=='m')$('grams').value=FOODS[+v][5]||'';preview()};$('grams').oninput=preview;$('addplan').onclick=addPlan;
+$('prev').onclick=function(){cur=shift(cur,-1);render()};
+$('next').onclick=function(){cur=shift(cur,1);render()};
+$('copy').onclick=function(){
+  var src=items(shift(cur,-1));if(!src.length){alert('Não há refeições registradas no dia anterior.');return}
+  src.forEach(function(x){var c=JSON.parse(JSON.stringify(x));c.id=Date.now()+Math.random().toString(36).slice(2,6);items(cur).push(c)});
+  save();render();
+};
+$('list').onclick=function(e){
+  var id=e.target.getAttribute&&e.target.getAttribute('data-id');if(!id)return;
+  S.days[cur]=items(cur).filter(function(x){return x.id!==id});save();render();
+};
+[['gk','k'],['gp','p'],['gc','c'],['gf','f']].forEach(function(p){
+  var el=$(p[0]);el.value=S.goals[p[1]];
+  el.oninput=function(){var v=parseFloat(el.value);if(v>0){S.goals[p[1]]=v;save();render()}};
+});
+fillFoods();preview();render();
+</script>
+</body>
+</html>
